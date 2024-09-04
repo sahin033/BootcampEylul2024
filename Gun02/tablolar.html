@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+</head>
+<body>
+    <h2>Memleketler</h2>
+    <!-- border yerine css kullanılmalı -->
+     <!-- geçici olaraka yapıldı... !!!! -->
+    <table border="1">
+        <tr><!-- table row -->
+            <td rowspan="4">
+                Türkiye
+            </td>
+            <th> <!-- table heading -->
+                plaka
+            </th>
+            <th>
+                Şehir
+            </th>
+            <th>
+                Neyiyle Meşhur
+            </th>
+            <th>
+                Bölgesi
+            </th>
+            <th>
+                Denizi Var Mı?
+            </th>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>Samsun</td>
+            <td>Bafra pidesi</td>
+            <td>Karadeniz</td>
+            <td rowspan="2">Evet</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Mersin</td>
+            <td>Tantuni</td>
+            <td>Akdeniz</td>
+        </tr>
+    </table>
+
+    <h2>Filmler</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Film Adı</th>
+                <th>Yıl</th>
+                <th>Puan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kurtlar Vadisi Pusu</td>
+                <td>2007</td>
+                <td>6.5/10</td>
+            </tr>
+            <tr>
+                <td>Kaybedenler Kulübü</td>
+                <td>2011</td>
+                <td>7.5/10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Ortalama Puan</th>
+                <th>7</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
