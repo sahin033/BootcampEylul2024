@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        div[class^="kutu"] {
+            width: 200px;
+            height: 200px;
+            margin: 10px; 
+        }
+        .kutu1 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to right, cyan, magenta);
+            margin: 10px;
+        }
+
+        .kutu2 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, cyan, yellow);
+            margin: 10px;          
+        }
+
+        .kutu3 {
+            background: radial-gradient(red, blue);
+        }
+
+        .kutu4 {
+            background: repeating-linear-gradient(90deg, red, white 10px);
+        }
+        .kutu5 {
+            background: repeating-radial-gradient(black, white 5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu1"></div>
+    <div class="kutu2"></div>
+    <div class="kutu3"></div>
+    <div class="kutu4"></div>
+    <div class="kutu5"></div>
+</body>
+</html>
