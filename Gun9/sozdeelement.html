@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sözde element</title>
+    <style>
+
+        body {
+            font-style: 24px;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        p::first-line {
+            text-decoration: underline;
+        }
+
+        p::first-letter {
+            font-size: 3em;
+            float: left;
+            line-height: 0.75;
+            font-weight: bold;
+        }
+
+        .p::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        main {
+            background-color: rgb(211, 231, 211);
+            max-width: 600px;
+            margin: 60px auto 20px;
+            padding: 36px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+        }
+        @media (max-width: 680px) {
+            main{
+                margin: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cumque blanditiis facere veniam, perspiciatis nobis, nesciunt alias repellat facilis officiis ipsam optio nostrum earum et a possimus, consectetur ea. Molestiae?</p>
+        <p>Assumenda iure aut harum nobis possimus obcaecati facere eveniet atque quaerat necessitatibus consectetur beatae dolorem quis autem nisi similique recusandae, sunt dicta quidem unde blanditiis. Eum ipsum voluptates possimus minima?</p>
+        <p>Ullam, vel ex, natus voluptate placeat omnis exercitationem labore consequatur id temporibus ad, aliquid dignissimos aut architecto porro illum quas accusantium vitae. Quibusdam consequuntur praesentium alias quod iste, cupiditate ratione!</p>
+        <p>Est sint modi aspernatur fugiat quod adipisci debitis nisi reprehenderit recusandae temporibus accusamus impedit neque voluptas, enim provident ducimus, consectetur eaque earum esse possimus, quos quia nobis fuga. Repellendus, soluta?</p>
+    </main>
+</body>
+</html>
