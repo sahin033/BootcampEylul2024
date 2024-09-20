@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox and granit</title>
+    <style>
+        .container {
+            border: 10px dashed black;
+            height: 300px;
+            display: flex;    /* cocukları esnek yerleşecek */
+            flex-direction: row;    /* row row-reverse column column-reverse */
+            justify-content: space-evenly;    /* flex-start flex-end center space-between space-around sapce-evenly */
+            align-items: center;   /* stretch center flex-start flex-end */
+        }
+        .kutu1 {
+            background-color: rgb(110, 160, 53);
+        }
+        .kutu2 {
+            background-color: rgb(27, 95, 14);
+        }
+
+        .kutu3 {
+            background-color: blue;
+        }
+
+
+        .tumu {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 25%;
+        }
+        .tumu>div {
+            background-color: black;
+            color: white;
+        }
+        .a {
+            order: 1;
+        }
+        .d {
+            order: -333;
+        }
+        .c {
+            order: -100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kutu1">Lorem, ipsum dolor.</div>
+        <div class="kutu2">Lorem, ipsum dolor.</div>
+        <div class="kutu3">Lorem, ipsum dolor.</div>
+    </div>
+
+
+    <div class="tumu">
+        <div class="a">adana</div>
+        <div class="b">Bursa</div>
+        <div class="c">ceyhan</div>
+        <div class="d">denizli</div>
+        <div class="e">edirne</div>
+        <div class="f">fatsa</div>
+        <div class="g">gümüşhane</div>
+    </div>
+</body>
+</html>
