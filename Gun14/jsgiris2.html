@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript bölgeleri</title>
+</head>
+<body>
+    <h1>JavaScript giriş II</h1>
+    <p>Bir HTML dökümanında JavaScript'i 3 farklı şekilde dahil edebiliriz</p>
+
+
+    <!-- A. SCRIPT TAGLARI ARASINDA -->
+    <script>
+        let x = 2 + 2;
+        document.write("<hr>");
+        document.write(x);
+    </script>
+    <!-- B. HARİCİ DOSYA -->
+     <script src="kod.js"></script>
+     <hr>
+     <button onclick="alert('Başın göğe erdi mi?')">Bana Tıklama</button>
+     <hr>
+     <button id="tom" onmouseenter="document.getElementById('tom').textContent = 'şaka'">üzerime gelmeyin burayı terk ederim</button>
+</body>
+</html>
