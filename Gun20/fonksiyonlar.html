@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonksiyonlar</title>
+</head>
+<body>
+    
+
+    <script src="..//ortak/yaz.js"></script>
+
+    <!-- 
+    fonksiyonlar 4'e ayrılır
+    1. prametre almayan değer döndürmeyen
+    2. prametre almayan değer döndüren
+    3. prametre alan değer döndürmeyen
+    4. prametre alan değer döndüren
+    -->
+    <script>
+        // 4
+        function ekranaTarihiVeSaatiYazdir() {
+            let suAn = new Date();
+            ciz(suAn.toLocaleString("tr"));
+        }
+        ekranaTarihiVeSaatiYazdir();
+
+        //3
+        function ayinGunu() {
+            let suAn = new Date();
+            return suAn.getDate();
+        }
+        let gun = ayinGunu();
+        ciz("Bugun ayın" + gun + ". Günündür.");
+
+        // 2
+        function arkaplaniBoya(renk){
+            document.body.style.background = renk;
+        }
+        arkaplaniBoya("linear-gradient(to right, blue, white)")
+
+        // 1
+        function birFazlasi(x) {
+        return x + 1;
+         }
+
+         let sayi = 3;
+         sayi = birFazlasi(sayi);
+         ciz(sayi);
+
+
+    </script>
+</body>
+</html>
